@@ -2,6 +2,7 @@ const io = require('socket.io')();
 const { createGameState, gameLoop, getUpdatedVelocity } = require('./game');
 const { FRAME_RATE } = require('./constants');
 
+
 io.on('connection', client => {
     const state =createGameState();
     client.emit('init', { data: 'Connected'});

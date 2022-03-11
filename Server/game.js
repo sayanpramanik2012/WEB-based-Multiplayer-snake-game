@@ -81,8 +81,14 @@ function randomFood(state) {
 function getUpdatedVelocity(keyCode)
 {
     switch(keyCode){
+        case 65: {
+            return { x: -1, y: 0 };
+        }
         case 37: {
             return { x: -1, y: 0 };
+        }
+        case 87: { // down
+            return { x: 0, y: -1 };
         }
         case 38: { // down
             return { x: 0, y: -1 };
@@ -90,7 +96,13 @@ function getUpdatedVelocity(keyCode)
         case 39: { // right
             return { x: 1, y: 0 };
         }
+        case 68: { // right
+            return { x: 1, y: 0 };
+        }
         case 40: { // up
+            return { x: 0, y: 1 };
+        }
+        case 83: { // up
             return { x: 0, y: 1 };
         }
     }

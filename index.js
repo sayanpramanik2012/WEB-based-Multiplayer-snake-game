@@ -6,6 +6,7 @@ const socket = io('//localhost:3000');
 
 socket.on('init', handleInit);
 socket.on('gameState', handleGameState);
+socket.on('gameOver', handleGameOver);
 
 const gameScreen = document.getElementById('gameScreen');
 
@@ -64,3 +65,8 @@ function handleGameState(gameState) {
 function handleInit(msg){
      console.log(msg);
  }
+
+function handleGameOver()
+{
+    alert("Gameover!")
+}

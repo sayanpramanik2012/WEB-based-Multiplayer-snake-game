@@ -33,8 +33,8 @@ let gameActive = false;*/
         y:7,
     },
     gridsize:20,
-}*/
-
+}
+*/
 function init() {
 
   canvas = document.getElementById('canvas');

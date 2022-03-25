@@ -32,11 +32,11 @@ function createGameState() {
         },{
             pos: {
               x: 18,
-              y: 10,
+              y: 50,
             },
             vel: {
               x: 0,
-              y: 0,
+              y: 1,
             },
             snake: [
               {x: 20, y: 50},
@@ -92,6 +92,9 @@ function gameLoop(state){
           if (cell.x === playerOne.pos.x && cell.y === playerOne.pos.y) {
             return 2;
           }
+          if (cell.x === playerTwo.pos.x && cell.y === playerTwo.pos.y) {
+            return 1;
+          }
         }
         playerOne.snake.push({ ...playerOne.pos });
         playerOne.snake.shift();
@@ -103,6 +106,9 @@ function gameLoop(state){
         {
           if (cell.x === playerTwo.pos.x && cell.y === playerTwo.pos.y) {
             return 1;
+          }
+          if (cell.x === playerOne.pos.x && cell.y === playerOne.pos.y) {
+            return 2;
           }
         }
         playerTwo.snake.push({ ...playerTwo.pos });

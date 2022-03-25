@@ -3,6 +3,7 @@ const { initGame, gameLoop, getUpdatedVelocity } = require('./game');
 const { FRAME_RATE } = require('./constants');
 const { makeid } = require('./utils');
 
+
 const state = {};
 const clientRooms = {};
 
@@ -101,5 +102,7 @@ function emitGameOver(roomName, winner) {
   io.sockets.in(roomName)
     .emit('gameOver', JSON.stringify({ winner }));
 }
+
+
 
 io.listen(3000);

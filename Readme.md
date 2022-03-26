@@ -4,16 +4,16 @@ Browser-MultiPlayer-Snake-game
 
 requirements:
 
-Socket.io
-Node.js
-npx,npm
+1. Socket.io
+2. Node.js
+3. npx,npm
 
 
 How to run:
 
-Download the zip file.
-In main directive run cmd and write "npx live-server"
-In the server Directive run "npx nodemon server.js"
+1. Download the zip file.
+2. In main directive run cmd and write "npx live-server"
+3. In the server Directive run "npx nodemon server.js"
 
 There is a file named as ngrok.exe to run and type "ngrok.exe http 8080", which will show the link to public the server
 ------------------------------------------

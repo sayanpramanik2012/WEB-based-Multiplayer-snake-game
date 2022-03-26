@@ -43,7 +43,8 @@ function init() {
   canvas = document.getElementById('canvas');
   ctx = canvas.getContext('2d');
 
-  canvas.width = canvas.height = 800;
+  canvas.width =  500;
+  canvas.height = 500;
 
   ctx.fillStyle = BG_COLOUR;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -129,7 +130,3 @@ function reset() {
   initialScreen.style.display = "block";
   gameScreen.style.display = "none";
 }
-
-
-
-

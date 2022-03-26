@@ -42,7 +42,10 @@
       <div id="gameScreen" class="h-100">
         <div class="d-flex flex-column align-items-center justify-content-center h-100">
 
-          <h2>Your game code is: <span id="gameCodeDisplay"></span></h2><p>press f5 to start a new game</p>
+          <h2>Your game code is: <span id="gameCodeDisplay"></span></h2>
+		      <p> Start a new game by clicking-></p>
+          <button onClick="window.location.reload();">New Game </button>
+          <p> </p>
 
           <canvas id="canvas"></canvas>
         </div>
@@ -51,7 +54,7 @@
     </div>
   </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

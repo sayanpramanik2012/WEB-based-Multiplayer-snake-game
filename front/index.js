@@ -2,8 +2,8 @@ const BG_COLOUR = '#231f20';
 const SNAKE_COLOUR = '#c2c2c2';
 const FOOD_COLOUR = '#e66916';
 
-//const socket = io('https://web-based-multisnake-game.herokuapp.com/');
-const socket = io('http://127.0.0.1:3000');
+const socket = io('https://snake-web-multiplayergame.herokuapp.com/');
+//const socket = io('http://127.0.0.1:3000');
 
 socket.on('init', handleInit);
 socket.on('gameState', handleGameState);
